@@ -70,6 +70,7 @@
             this.buttonDiezPesos.Size = new System.Drawing.Size(152, 152);
             this.buttonDiezPesos.TabIndex = 2;
             this.buttonDiezPesos.UseVisualStyleBackColor = true;
+            this.buttonDiezPesos.Click += new System.EventHandler(this.buttonDiezPesos_Click);
             // 
             // buttonCincoPesos
             // 
@@ -81,6 +82,7 @@
             this.buttonCincoPesos.Size = new System.Drawing.Size(152, 152);
             this.buttonCincoPesos.TabIndex = 3;
             this.buttonCincoPesos.UseVisualStyleBackColor = true;
+            this.buttonCincoPesos.Click += new System.EventHandler(this.buttonCincoPesos_Click);
             // 
             // buttonDosPesos
             // 
@@ -92,6 +94,7 @@
             this.buttonDosPesos.Size = new System.Drawing.Size(152, 152);
             this.buttonDosPesos.TabIndex = 4;
             this.buttonDosPesos.UseVisualStyleBackColor = true;
+            this.buttonDosPesos.Click += new System.EventHandler(this.buttonDosPesos_Click);
             // 
             // buttonUnPeso
             // 
@@ -103,6 +106,7 @@
             this.buttonUnPeso.Size = new System.Drawing.Size(152, 152);
             this.buttonUnPeso.TabIndex = 5;
             this.buttonUnPeso.UseVisualStyleBackColor = true;
+            this.buttonUnPeso.Click += new System.EventHandler(this.buttonUnPeso_Click);
             // 
             // buttonCincuentaCentavos
             // 
@@ -114,6 +118,7 @@
             this.buttonCincuentaCentavos.Size = new System.Drawing.Size(152, 152);
             this.buttonCincuentaCentavos.TabIndex = 6;
             this.buttonCincuentaCentavos.UseVisualStyleBackColor = true;
+            this.buttonCincuentaCentavos.Click += new System.EventHandler(this.buttonCincuentaCentavos_Click);
             // 
             // Form1
             // 
