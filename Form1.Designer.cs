@@ -35,6 +35,8 @@
             this.buttonDosPesos = new System.Windows.Forms.Button();
             this.buttonUnPeso = new System.Windows.Forms.Button();
             this.buttonCincuentaCentavos = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxEstados = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +67,7 @@
             this.buttonDiezPesos.BackgroundImage = global::MaquinaDePasajes.Properties.Resources.DiezPesos;
             this.buttonDiezPesos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDiezPesos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDiezPesos.Location = new System.Drawing.Point(12, 389);
+            this.buttonDiezPesos.Location = new System.Drawing.Point(101, 336);
             this.buttonDiezPesos.Name = "buttonDiezPesos";
             this.buttonDiezPesos.Size = new System.Drawing.Size(152, 152);
             this.buttonDiezPesos.TabIndex = 2;
@@ -77,7 +79,7 @@
             this.buttonCincoPesos.BackgroundImage = global::MaquinaDePasajes.Properties.Resources.SinkoPeso;
             this.buttonCincoPesos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCincoPesos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCincoPesos.Location = new System.Drawing.Point(206, 389);
+            this.buttonCincoPesos.Location = new System.Drawing.Point(295, 336);
             this.buttonCincoPesos.Name = "buttonCincoPesos";
             this.buttonCincoPesos.Size = new System.Drawing.Size(152, 152);
             this.buttonCincoPesos.TabIndex = 3;
@@ -89,7 +91,7 @@
             this.buttonDosPesos.BackgroundImage = global::MaquinaDePasajes.Properties.Resources.DosPesos;
             this.buttonDosPesos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDosPesos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDosPesos.Location = new System.Drawing.Point(400, 389);
+            this.buttonDosPesos.Location = new System.Drawing.Point(489, 336);
             this.buttonDosPesos.Name = "buttonDosPesos";
             this.buttonDosPesos.Size = new System.Drawing.Size(152, 152);
             this.buttonDosPesos.TabIndex = 4;
@@ -101,7 +103,7 @@
             this.buttonUnPeso.BackgroundImage = global::MaquinaDePasajes.Properties.Resources.UnPeso;
             this.buttonUnPeso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonUnPeso.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonUnPeso.Location = new System.Drawing.Point(614, 389);
+            this.buttonUnPeso.Location = new System.Drawing.Point(703, 336);
             this.buttonUnPeso.Name = "buttonUnPeso";
             this.buttonUnPeso.Size = new System.Drawing.Size(152, 152);
             this.buttonUnPeso.TabIndex = 5;
@@ -113,19 +115,42 @@
             this.buttonCincuentaCentavos.BackgroundImage = global::MaquinaDePasajes.Properties.Resources.CincuentaCentavos;
             this.buttonCincuentaCentavos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCincuentaCentavos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCincuentaCentavos.Location = new System.Drawing.Point(818, 389);
+            this.buttonCincuentaCentavos.Location = new System.Drawing.Point(818, 336);
             this.buttonCincuentaCentavos.Name = "buttonCincuentaCentavos";
             this.buttonCincuentaCentavos.Size = new System.Drawing.Size(152, 152);
             this.buttonCincuentaCentavos.TabIndex = 6;
             this.buttonCincuentaCentavos.UseVisualStyleBackColor = true;
+            this.buttonCincuentaCentavos.Visible = false;
             this.buttonCincuentaCentavos.Click += new System.EventHandler(this.buttonCincuentaCentavos_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(306, 541);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 28);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Estados: ";
+            // 
+            // textBoxEstados
+            // 
+            this.textBoxEstados.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxEstados.Location = new System.Drawing.Point(400, 538);
+            this.textBoxEstados.Multiline = true;
+            this.textBoxEstados.Name = "textBoxEstados";
+            this.textBoxEstados.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxEstados.Size = new System.Drawing.Size(249, 126);
+            this.textBoxEstados.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(157)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.ClientSize = new System.Drawing.Size(982, 704);
+            this.Controls.Add(this.textBoxEstados);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonCincuentaCentavos);
@@ -138,6 +163,7 @@
             this.Text = "Máquina de Pasajes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -150,5 +176,7 @@
         private Button buttonDosPesos;
         private Button buttonUnPeso;
         private Button buttonCincuentaCentavos;
+        private Label label1;
+        private TextBox textBoxEstados;
     }
 }
